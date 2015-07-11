@@ -1,0 +1,75 @@
+@media screen and (min-width:500px) and (max-width:799px)
+{
+	#wrapper
+	{
+		background-image:url(../images/medium/cover1.jpg);
+		@include flex-direction(column);
+		@include justify-content(space-between);
+		
+		#mainheader
+		{
+			width:100%;
+			height:60px;
+			@include order(-1);
+			
+			#mainlogo
+			{
+				width:60px;
+				margin-left:15px;
+			}
+			h1
+			{
+				line-height:60px;
+				margin-left:-75px;
+			}
+		}
+		
+		#sidebar
+		{
+			@include order(-1);
+			position:relative;
+			width:100%;
+			right:-800px;
+			#mainnav
+			{
+				@include justify-content(space-around);
+				padding:6px 0;
+				li
+				{
+					font-size:1.2rem;
+					margin:5px 0;
+					padding:5px 15px;
+				}
+			}
+		}
+		
+		#articleswrapper
+		{
+			width:100%;
+			@include flex-grow(1);
+			
+			.content
+			{
+				header
+				{
+					margin:0 0 2px 0;
+					font-size:1.5rem;
+					text-align:center;
+				}
+				
+				top:1200px;
+				margin:8% 25px;
+				padding:20px;
+				max-height:70%;
+				overflow-Y:auto;
+			}
+		}
+		
+		#mainfooter
+		{
+			width:100%;
+			text-align:center;
+			height:50px;
+		}
+	}
+}

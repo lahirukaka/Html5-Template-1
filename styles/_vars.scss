@@ -1,0 +1,22 @@
+$accent_color:#CDDC39;
+
+@mixin border-radius($num)
+{
+	border-radius:$num;
+	-webkit-border-radius:$num;
+	-moz-border-radius:$num;
+}
+
+.flexbox
+{
+	@include display(flex);
+	transition:all 1s;
+}
+
+.die{display:none;}
+
+.menuselect
+{
+	background-color:rgba(0,0,0,0.8) !important;
+	&:hover{color:rgba(255,255,255,1) !important;}
+}
